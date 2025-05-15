@@ -38,9 +38,6 @@
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
       display: none;
     }
-    .formation-card.visible {
-      display: block;
-    }
     .formation-card h2 {
       font-size: 1.25rem;
       margin: 0 0 0.5rem 0;
@@ -64,30 +61,145 @@
   <h1>🔍 Rechercher une formation</h1>
 
   <div class="search-box">
-    <input type="text" id="search-input" placeholder="Tapez un mot-clé (ex: assistant, commerce...)" onkeyup="filtrerFormations()">
+    <input type="text" id="search-input" placeholder="Tapez un mot-clé (ex: assistant, commerce...)" oninput="filtrerFormations()">
   </div>
 
   <div id="catalogue">
-    <div class="formation-card" data-tags="advf domicile aide sanitaire social tp advf famille familles vie">
+       <div class="formation-card" data-tags="osengo présentation capsule découverte">
+      <h2>🌌 Premier arrêt : planète Osengo</h2>
+      <p><strong>Domaine :</strong> Découverte</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-1" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags=" assistant sanitaire social tp advf famille domicile aide vie aux familles">
       <h2>🫶 TP Assistant de vie aux familles</h2>
       <p><strong>Domaine :</strong> Sanitaire & Social</p>
-      <a href="https://monespace.osengo.fr/course/view.php?id=3111&section=3" target="_blank">📥 Accéder à la section Moodle</a>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-3" target="_blank">📍 Accéder</a>
     </div>
-  </div>
-
+    <div class="formation-card" data-tags="agent service médico-social asms sanitaire medico médico">
+      <h2>🫶 TP Agent de Service Médico-Social</h2>
+      <p><strong>Domaine :</strong> Sanitaire & Social</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-4" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="secrétaire assistant médico-social administratif medico médico social">
+      <h2>🫶 TP Secrétaire Assistant Médico-social</h2>
+      <p><strong>Domaine :</strong> Sanitaire & Social</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-5" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="responsable coordonnateur domicile services encadrement service coordinateur">
+      <h2>🫶 TP Responsable-coordonnateur services au domicile</h2>
+      <p><strong>Domaine :</strong> Sanitaire & Social</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-6" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="aes accompagnant éducatif social diplôme état">
+      <h2>🫶 DE Accompagnant Educatif et Social</h2>
+      <p><strong>Domaine :</strong> Sanitaire & Social</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-7" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="animation bac pro personnes âgées enfance animateur">
+      <h2>🫶 BAC PRO Animation - Enfance et personnes âgées</h2>
+      <p><strong>Domaine :</strong> Sanitaire & Social</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-8" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="petite enfance cap aepe accompagnant éducatif ">
+      <h2>🫶 CAP Accompagnant Éducatif Petite Enfance</h2>
+      <p><strong>Domaine :</strong> Sanitaire & Social</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-9" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="commerce domaine vente relation client">
+      <h2>🛍️ Commerce</h2>
+      <p><strong>Domaine :</strong> Commerce</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-10" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="employé commercial vente produits mise rayon">
+      <h2>🛍️ TP Employé commercial</h2>
+      <p><strong>Domaine :</strong> Commerce</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-11" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="conseiller vente client commerce accueil">
+      <h2>🛍️ TP Conseiller de vente</h2>
+      <p><strong>Domaine :</strong> Commerce</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-12" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="conseiller funéraire décès accompagnement commerce">
+      <h2>🛍️ Conseiller Funéraire</h2>
+      <p><strong>Domaine :</strong> Commerce</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-13" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="bts mco commerce management commercial">
+      <h2>🛍️ BTS Management Commercial Opérationnel</h2>
+      <p><strong>Domaine :</strong> Commerce</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-14" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="gestion assistanat domaine administratif">
+      <h2>🖇️ Gestion - Assistanat</h2>
+      <p><strong>Domaine :</strong> Administratif</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-15" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="secrétaire assistant administratif bureautique">
+      <h2>🖇️ TP Secrétaire Assistant</h2>
+      <p><strong>Domaine :</strong> Administratif</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-16" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="comptable assistant gestion paie fiscalité">
+      <h2>🖇️ TP Comptable Assistant</h2>
+      <p><strong>Domaine :</strong> Administratif</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-17" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="fle français langue étrangère communication">
+      <h2>🖜️ FLE</h2>
+      <p><strong>Domaine :</strong> Langue</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-18" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="fle professionnel afc aura français">
+      <h2>🖜️ FLE à visée professionnelle - AFC AURA</h2>
+      <p><strong>Domaine :</strong> Langue</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-19" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="delf afc aura préparation certification">
+      <h2>🖜️ Préparation DELF Tout public – DELF A1 vers B2</h2>
+      <p><strong>Domaine :</strong> Langue</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-20" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="dilf afc aura préparation certification">
+      <h2>🖜️ Préparation DILF - DILF - AFC AURA</h2>
+      <p><strong>Domaine :</strong> Langue</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-21" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="numérique digital compétences informatiques">
+      <h2>💻 Numérique</h2>
+      <p><strong>Domaine :</strong> Numérique</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-22" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="informatique fracture numérique découverte">
+      <h2>💻 Découverte de l’outil informatique et fracture numérique</h2>
+      <p><strong>Domaine :</strong> Numérique</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-23" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="informatique technique base numérique">
+      <h2>💻 Découverte technique de base en informatique</h2>
+      <p><strong>Domaine :</strong> Numérique</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-24" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="concepteur designer ui numérique web graphisme">
+      <h2>💻 TP Concepteur Designer UI</h2>
+      <p><strong>Domaine :</strong> Numérique</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-25" target="_blank">📍 Accéder</a>
+    </div>
+    <div class="formation-card" data-tags="développeur web mobile numérique">
+      <h2>💻 TP Développeur Web et Web mobile</h2>
+      <p><strong>Domaine :</strong> Numérique</p>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-26" target="_blank">📍 Accéder</a>
+    </div>
+    
   <script>
     function filtrerFormations() {
       const input = document.getElementById("search-input").value.toLowerCase();
       const cartes = document.querySelectorAll(".formation-card");
-      let match = false;
       cartes.forEach(carte => {
         const tags = carte.dataset.tags.toLowerCase();
-        if (input && tags.includes(input)) {
-          carte.classList.add("visible");
-          match = true;
-        } else {
-          carte.classList.remove("visible");
-        }
+        const mots = input.split(" ").filter(Boolean);
+        const visible = mots.some(mot => tags.includes(mot));
+        carte.style.display = input && visible ? 'block' : 'none';
       });
     }
   </script>
