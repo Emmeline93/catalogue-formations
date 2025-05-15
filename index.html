@@ -36,6 +36,10 @@
       padding: 1.2rem;
       margin-bottom: 1.5rem;
       box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      display: none;
+    }
+    .formation-card.visible {
+      display: block;
     }
     .formation-card h2 {
       font-size: 1.25rem;
@@ -54,7 +58,6 @@
       font-weight: bold;
       text-decoration: none;
     }
-    .hidden { display: none; }
   </style>
 </head>
 <body>
@@ -68,7 +71,7 @@
     <div class="formation-card" data-tags="advf domicile aide sanitaire social tp advf famille familles vie">
       <h2>🫶 TP Assistant de vie aux familles</h2>
       <p><strong>Domaine :</strong> Sanitaire & Social</p>
-      <a href="https://monespace.osengo.fr/course/view.php?id=3111#section-3" target="_blank">📥 Accéder à la section Moodle</a>
+      <a href="https://monespace.osengo.fr/course/view.php?id=3111&section=3" target="_blank">📥 Accéder à la section Moodle</a>
     </div>
   </div>
 
@@ -76,9 +79,15 @@
     function filtrerFormations() {
       const input = document.getElementById("search-input").value.toLowerCase();
       const cartes = document.querySelectorAll(".formation-card");
+      let match = false;
       cartes.forEach(carte => {
         const tags = carte.dataset.tags.toLowerCase();
-        carte.classList.toggle("hidden", !tags.includes(input));
+        if (input && tags.includes(input)) {
+          carte.classList.add("visible");
+          match = true;
+        } else {
+          carte.classList.remove("visible");
+        }
       });
     }
   </script>
